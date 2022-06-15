@@ -1,0 +1,217 @@
+/* HEADER */
+header {
+  font-family: "Koulen", cursive;
+}
+
+.navbar-brand img {
+  width: 120px;
+}
+
+/* -- MOBILE -- */
+@media (max-width: 576px) {
+  .navbar-brand img {
+    width: 70px;
+  }
+}
+
+/* -- TABLET -- */
+@media (min-width: 576px) and (max-width: 992px) {
+  .navbar-brand img {
+    width: 80px;
+  }
+}
+
+/* UBICACION */
+.ubicacion, .ubicacion .ubicacion-titulo h1, .ubicacion .ubicacion-texto p {
+  background-color: white;
+  text-align: center;
+  font-family: "Koulen", cursive;
+  color: #727272;
+}
+
+.ubicacion .ubicacion-titulo h1 {
+  font-size: 40px;
+  padding-top: 25px;
+  /* text-align: center;
+            font-family: $FuentePagina; */
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+.ubicacion .ubicacion-texto p {
+  font-size: 40px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.ubicacion .ubicacion-iframe, .ubicacion .ubicacion-titulo h1 .ubicacion-iframe, .ubicacion .ubicacion-texto p .ubicacion-iframe {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* -- MOBILE -- */
+@media (max-width: 576px) {
+  iframe {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* -- TABLET -- */
+@media (min-width: 576px) and (max-width: 992px) {
+  iframe {
+    width: 550px;
+    height: 500px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+/* -- DESKTOP -- */
+@media (min-width: 992px) {
+  iframe {
+    width: 700px;
+    height: 600px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+/* FOOTER */
+.pie {
+  width: 100%;
+  background-color: #be2323;
+}
+
+.pie .container_footer {
+  width: 100%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 5px;
+}
+
+.pie .container_footer figure {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pie .container_footer figure img {
+  width: 150px;
+}
+
+.pie .container_footer .box h2 {
+  color: #0f0f0f;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: "Koulen", cursive;
+}
+
+.pie .container_footer .box p {
+  color: #131212;
+  font-family: "Koulen", cursive;
+}
+
+.pie .container_footer .box .redes a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: black;
+  margin-right: 10px;
+  /* background-color: rgb(155, 25, 25); */
+  text-align: center;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.pie .container_footer .box .redes a:hover {
+  color: white;
+}
+
+.pie .container_footer2 {
+  background-color: black;
+  padding: 15px 10px;
+  text-align: center;
+  color: #e3e1e1;
+}
+
+.pie .container_footer2 small {
+  font-size: 15px;
+}
+
+/* -- MOBILE -- */
+@media (max-width: 576px) {
+  .pie .container_footer {
+    width: 100%;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .pie .container_footer .box h2 {
+    text-align: center;
+  }
+  .pie .container_footer .box p {
+    text-align: center;
+  }
+  .pie .container_footer .box .redes {
+    text-align: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* -- TABLET -- */
+@media (min-width: 576px) and (max-width: 992px) {
+  .pie .container_footer {
+    width: 100%;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .pie .container_footer .box h2 {
+    text-align: center;
+  }
+  .pie .container_footer .box p {
+    text-align: center;
+  }
+  .pie .container_footer .box .redes {
+    text-align: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* MAPS */
+.fa-facebook {
+  background-color: blue;
+}
+
+.fa-instagram {
+  background-color: violet;
+}
+
+.fa-twitter {
+  background-color: lightblue;
+}
+/*# sourceMappingURL=main.css.map */

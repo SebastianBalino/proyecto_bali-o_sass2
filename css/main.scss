@@ -1,0 +1,229 @@
+
+
+@import 'vars';
+
+
+
+/* HEADER */
+
+header {
+    font-family: $FuentePagina;
+}
+
+.navbar-brand img {
+    width: 120px;
+}
+
+/* -- MOBILE -- */
+@media (max-width:576px) {
+    .navbar-brand img {
+        width: 70px;
+    } 
+
+}    
+/* -- TABLET -- */
+@media (min-width:576px) and (max-width:992px) {
+    .navbar-brand img {
+        width: 80px;
+    }
+}   
+
+
+
+/* UBICACION */
+
+.ubicacion {
+    background-color: $colorSection;
+    text-align: center;
+    font-family: $FuentePagina;;
+    color: rgb(114, 114, 114);
+    & &-titulo {
+        h1 { 
+            @extend .ubicacion;
+            font-size: 40px;
+            padding-top: 25px;
+            /* text-align: center;
+            font-family: $FuentePagina; */
+            letter-spacing: 2px;
+            word-spacing: 5px;
+        }
+    }    
+    & &-texto {
+        p {
+            @extend .ubicacion;
+            font-size: 40px;
+            padding-top: 25px;;
+            padding-bottom: 20px;
+            font-size: 20px;
+        }
+    }
+    & &-iframe {
+        text-align: center;  
+        padding-top: 25px;
+        padding-bottom: 25px;
+        }
+    
+    }
+
+/* -- MOBILE -- */
+@media (max-width: 576px) {
+    iframe {
+        width: 400px;
+        height: 400px;
+    }
+}
+/* -- TABLET -- */
+@media (min-width: 576px) and (max-width: 992px) {
+    
+    iframe {    
+        width: 550px;
+        height: 500px; 
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+/* -- DESKTOP -- */
+@media (min-width: 992px) {
+    
+    iframe {    
+        width: 700px;
+        height: 600px; 
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+/* FOOTER */
+
+
+@mixin sizes($width) {
+    width: $width;
+}
+
+
+.pie {
+    @include sizes(100%);
+    background-color: $colorFooter;
+    & .container_footer {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 5px;
+        figure {
+            @include sizes(100%);
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 150px;
+            }
+        }
+        .box {
+            h2 {
+                color: rgb(15, 15, 15);
+                margin-bottom: 20px;
+                font-size: 25px;
+                font-family: $FuentePagina;
+
+            }
+            p {
+                color: rgb(19, 18, 18);
+                font-family: $FuentePagina;
+            }
+            .redes { 
+
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    color: black;
+                    margin-right: 10px;
+                    /* background-color: rgb(155, 25, 25); */
+                    text-align: center;
+                    transition: all 300ms ease;    
+                }
+                a:hover { 
+                    color: white;
+                }
+            }
+
+        }
+    }
+    & .container_footer2 {
+        background-color: black;
+        padding: 15px 10px;
+        text-align: center;
+        color: rgb(227, 225, 225);
+        small {
+            font-size: 15px;
+        }
+    }
+}
+
+
+/* -- MOBILE -- */ 
+@media (max-width:576px) {
+    .pie .container_footer {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        .box {
+            h2 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+            .redes {
+                text-align: center;
+                align-content: center;
+                justify-content: center;
+            }
+        }
+
+    }
+}
+/* -- TABLET -- */
+@media (min-width:576px) and (max-width:992px) {
+    .pie .container_footer {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        .box {
+            h2 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+            .redes {
+                text-align: center;
+                align-content: center;
+                justify-content: center;
+            }
+        }
+
+    }
+}
+
+/* MAPS */
+
+$redes-sociales: (
+    facebook: blue,
+    instagram: violet,
+    twitter: lightblue,
+);
+
+@each $red, $valor in $redes-sociales {
+    .fa-#{$red} {
+        background-color: $valor;
+    }
+    
+}
+
